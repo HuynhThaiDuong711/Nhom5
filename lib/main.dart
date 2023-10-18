@@ -1,4 +1,4 @@
-import 'package:demo_thongke/thongke.dart';
+//import 'package:demo_thongke/thongke.dart';
 import 'package:flutter/material.dart';
 
 /// Flutter code sample for [IconButton].
@@ -13,7 +13,7 @@ class IconButtonExampleApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Demo Giao Dien Profile Info')),
-        body: const thonke(),
+        body: const Row(),
       ),
     );
   }
