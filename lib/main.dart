@@ -12,15 +12,49 @@ class IconButtonExampleApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('Demo Giao Dien Profile Info')),
-        drawer: Container(
-          decoration: BoxDecoration(
-              borderRadius: new BorderRadius.all(new Radius.circular(10.0)),
-              color: Colors.red),
-          padding: new EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 16.0),
-          child: Text("sửa thông tin",
-              style: TextStyle(
-                  color: Colors.blue[500], fontWeight: FontWeight.w900)),
+        appBar: AppBar(
+          title: const Text('Demo Profile Info Page'),
+          backgroundColor: Colors.redAccent,
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.more_vert),
+              // Thêm icon dưới dạng action icon
+              onPressed: () {
+                // Thực hiện một hành động khi icon được nhấn
+              },
+            ),
+          ],
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: const <Widget>[
+              DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.redAccent,
+                ),
+                child: Text(
+                  'Menu',
+                  style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 24,
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  'Trang chủ ',
+                  style: TextStyle(color: Colors.grey),
+                ),
+                selectedColor: Colors.blue,
+                leading: Icon(Icons.home),
+              ),
+              ListTile(
+                title: Text('Trang cá nhân',
+                    style: TextStyle(color: Colors.redAccent)),
+                leading: Icon(Icons.account_circle),
+              ),
+            ],
+          ),
         ),
         body: Column(
           children: [
