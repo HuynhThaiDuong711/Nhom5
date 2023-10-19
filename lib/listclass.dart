@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class mainWG extends StatelessWidget {
-  const mainWG({super.key});
+class listclass extends StatelessWidget {
+  const listclass({super.key});
   Widget build(BuildContext context) {
     return Material();
   }
