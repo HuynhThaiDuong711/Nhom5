@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'listclass.dart';
+import 'post.dart';
 import 'home.dart';
 
 /// Flutter code sample for [IconButton].
@@ -58,7 +58,7 @@ class IconButtonExampleApp extends StatelessWidget {
           ),
         ),
         body: Column(
-          children: [listclass(), home()],
+          children: const [post()],
         ),
       ),
     );
