@@ -1,4 +1,4 @@
-//import 'package:demo_thongke/thongke.dart';
+import 'package:demo_thongke/thongke.dart';
 import 'package:flutter/material.dart';
 
 /// Flutter code sample for [IconButton].
@@ -128,6 +128,7 @@ class IconButtonExampleApp extends StatelessWidget {
                 border: Border.all(color: Colors.black),
                 borderRadius: BorderRadius.circular(10.0),
               ),
+              child: const thonke(),
             ),
             Container(
               margin: const EdgeInsets.all(16.0),
